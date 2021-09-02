@@ -21,11 +21,22 @@ They can be used independently or in combination.
 
 | Name                 | Repository                                                             |
 |----------------------|------------------------------------------------------------------------|
+| Template             | https://github.com/TRON-Bioinformatics/tronflow-template               |
 | BWA alignment        | https://github.com/TRON-Bioinformatics/tronflow-bwa                    |
 | BAM preprocessing    | https://github.com/TRON-Bioinformatics/tronflow-bam-preprocessing      |
 | Mutect2              | https://github.com/TRON-Bioinformatics/tronflow-mutect2                |
 | VCF normalization    | https://github.com/TRON-Bioinformatics/tronflow-variant-normalization  |
 
+
+## TronFlow template
+
+Provides a basic template to create a new Nextflow pipeline with the TronFlow structure. 
+It includes: 
+ - a dummy Nextflow script
+ - a conda environment configuration
+ - GitLab CI tests integration
+ - a dummy test dataset including minimal FASTQ, BAM and VCF files
+ - a dummy test minimal reference
 
 ## BWA alignment
 
