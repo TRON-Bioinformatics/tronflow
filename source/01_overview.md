@@ -109,6 +109,9 @@ The pipeline consists of the following steps:
  * Trim redundant sequence and left align indels, indels in repetitive sequences can have multiple representations
  * Remove duplicated variants
 
+Optionally if BAM files are provided (through `--bam_files`) VCFs are annotated with allele frequencies and depth of 
+coverage by Vafator (https://github.com/TRON-Bioinformatics/vafator).
+
 ```
 nextflow run tron-bioinformatics/tronflow-variant-normalization --help
 ```
