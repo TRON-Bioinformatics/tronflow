@@ -8,3 +8,4 @@ ipykernel==5.3.4
 #insipid_sphinx_theme==0.2.1
 pydata-sphinx-theme==0.4.1
 Jinja2==2.11
+markupsafe==2.0.1
