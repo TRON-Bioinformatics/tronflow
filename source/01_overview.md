@@ -38,26 +38,28 @@ We actively seek feedback from the community to make the workflow robust to diff
 
 ## How to use
 
-Nextflow allows to run pipelines from GitHub, this is very convenient for reproducibility purposes.
+Nextflow allows to run pipelines from GitHub, this enables a seamless installation.
 
 ```
 nextflow run tron-bioinformatics/tronflow-alignment --help
 ```
 
-This will download the pipeline from GitHub and cache it in your local folder under `~/.nextflow/assets`. 
-You may delete pipelines from this folder.
+This will download the workflow from GitHub and cache it in your local folder under `~/.nextflow/assets`. 
+You may delete workflows from this folder after use.
 
-We support this pipelines for internal and external use, please, make sure you use the latest version of every given 
-workflow, unless you know what you are doing. It is a good idea to specify the version explicitly.
+Make sure you use the latest version of every given workflow, unless you know what you are doing. 
+It is a good idea to specify the version explicitly in your scripts for reproducibility purposes.
 
 ```
 nextflow run tron-bioinformatics/tronflow-alignment -r v2.1.0
 ```
 
-You can review the releases of each workflow in its releases section in GitHub.
+The history of releases of each workflow is documented in the corresponding GitHub releases section 
+(e.g.: https://github.com/TRON-Bioinformatics/tronflow-vcf-postprocessing/releases).
 
 To manage the dependencies we favour the use of conda. 
-In particular, we recommend using miniconda as it has fewer dependencies in the base and the risk of conflict is lower.
+In particular, we recommend using miniconda as it has fewer dependencies in the base installation and hence the risk 
+of conflict is lower.
 We define the conda dependencies of each process within each workflow, we recommend using the conda profile to make 
 sure that Nextflow uses conda. Alternatively you would need to install all dependencies locally before running the 
 workflow.
@@ -71,13 +73,14 @@ Remember you can configure your cluster of preference in your own standard profi
 
 ## Use cases
 
-The modular architecture of TronFlow allows to combine several of these modules for different purposes.
+The modular architecture of TronFlow allows to combine several of these workflows for different purposes.
 Here we outline the different use cases that we have found useful to illustrate how to combine the different
-building blocks to adapt the pipeline to different needs.
+building blocks to build pipelines adapted to different needs.
 
 ### Somatic variant calling
 
-This is the origin of TronFlow, benchmarking multiple somatic variant callers and make their results comparable. 
+This is the original motivation of TronFlow, benchmarking multiple somatic variant callers by enabling comparable 
+results from different variant callers. 
 Here we outline the general steps, but depending on the particular requirements the pipeline shall be adapted.
 
 The steps would roughly be:
@@ -148,7 +151,8 @@ The default hard filters when skipping VQSR are already adapted to RNA.
 
 ### Somatic copy number calling
 
-TODO...
+Work in progress...
+
 
 ## Development guide
 
@@ -162,6 +166,7 @@ It includes:
 
 For further details about Nextflow development there are several resources in the internet. 
 See also, our own tutorial in ()[].
+
 
 ## How to cite
 
