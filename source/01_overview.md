@@ -67,7 +67,7 @@ workflow.
 ```
 nextflow run tron-bioinformatics/tronflow-alignment -profile conda,standard 
 ```
-
+You might need to add the option `-with-conda` (see also the [conda documentation of nextflow](https://www.nextflow.io/docs/latest/conda.html#enabling-conda-environment)).
 Remember you can configure your cluster of preference in your own standard profile.
 
 
