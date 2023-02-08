@@ -80,7 +80,7 @@ html_copy_source = False
 
 
 html_theme_options = {
-    "github_url": "https://github.com/TRON-bioinformatics/neofox",
+    "github_url": "https://github.com/TRON-bioinformatics/tronflow",
     "external_links": [
         {
             "name": "TRON",
